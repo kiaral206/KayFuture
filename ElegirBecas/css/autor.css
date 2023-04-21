@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+body{
+    background-repeat: no-repeat;
+    background-size:  100% 100%;
+    background-attachment: fixed;
+}
+.salida{
+    background-color: rgba(245, 102, 102, 0.676);
+    color: aliceblue;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow:0 0 30px rgb(255, 128, 174);
+    border:2px none;
+    margin-left: 90%;
+    margin-top: -400%;
+    cursor: pointer;
+}
+h1{
+    color: aliceblue;
+    font-family: 'Quicksand', sans-serif;
+}
+.leer{
+    background-color: rgba(0, 0, 0, 0.531);
+    border: 2px solid aliceblue;
+    border-radius: 20px;   
+    box-shadow:inset 0 0 10px rgb(236, 192, 208),0 0 10px ;
+    color:aliceblue ;
+    padding: 3px;
+    font-family:'Quicksand', sans-serif ;
+    cursor: pointer;
+}
+.info_obra{
+    color: aliceblue;
+    text-align: center;
+}
+
+.info_obra img{
+    width: 300px;
+}
+/* .h1{
+    margin-top: 0px;
+} */

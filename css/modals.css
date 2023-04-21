@@ -1,0 +1,89 @@
+/*Efecto*/
+.modalmask {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #0000007c;
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+/*Formato de la ventana*/
+.modalbox{
+    width: 400px;
+    position: relative;
+    padding: 10px 20px 13px 20px;
+    background: #333333;
+    color: #FFFFFF;
+    border-radius: 3px;
+    border-color: #B3E5BE;
+    border-style: inset;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;  
+}
+/*Movimientos*/
+.movedown {
+    margin: 0 auto;
+}
+.rotate {
+    margin: 10% auto;
+    -webkit-transform: scale(-5,-5);
+    transform: scale(-5,-5);
+}
+.resize {
+    margin: 10% auto;
+    width:0;
+    height:0;
+}
+.modalmask:target .movedown{       
+    margin:10% auto;
+}
+/* .modalmask:target .rotate{     
+    transform: rotate(360deg) scale(1,1);
+        -webkit-transform: rotate(360deg) scale(1,1);
+} */
+.modalmask:target .resize{
+    width:800px;
+    height:280px;
+}
+/*Boton de cerrar*/
+.close {
+    background: #B3E5BE;
+    color: #070000;
+    font-family: 'Open Sans';
+    font-size: 25px;
+    line-height: 30px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    top: 0px;
+    width: 34px;
+    text-decoration: none;
+    /* font-weight: bold; */
+    border-radius:3px;
+}
+.close:hover {
+    background: #df7b6b;
+    color:#222;
+}
+.h2{
+    color: #B3E5BE;
+    font-family: Montserrat;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.p{
+    font-family: 'Open Sans';
+    font-size: 20px;
+}

@@ -1,0 +1,90 @@
+/*Efecto*/
+.modalmask {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #0000007c;
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+/*Formato de la ventana*/
+.modalbox{
+    width: 400px;
+    position: relative;
+    padding: 10px 20px 13px 20px;
+    color: #FFFFFF;
+    border-radius: 3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;  
+}
+/*Movimientos*/
+.movedown {
+    margin: 0 auto;
+}
+.rotate {
+    margin: 10% auto;
+    -webkit-transform: scale(-5,-5);
+    transform: scale(-5,-5);
+}
+.resize {
+    /* margin-left: 270px;
+    margin-top: 40px; */
+    width:0;
+    height:0;
+}
+.modalmask:target .movedown{       
+    margin:10% auto;
+}
+/* .modalmask:target .rotate{     
+    transform: rotate(360deg) scale(1,1);
+        -webkit-transform: rotate(360deg) scale(1,1);
+} */
+.modalmask:target .resize{
+    width:800px;
+    height:550px;
+}
+/*Boton de cerrar*/
+.close1 {
+    background: #ffcc00;
+    color: #070000;
+    font-family: 'Open Sans';
+    font-size: 25px;
+    line-height: 30px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    top: 70px;
+    left: 480px;
+    width: 34px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:5px;
+}
+.close1:hover {
+    background: #fef575;
+    color:#222;
+}
+.btn{
+    border: #070000 solid 1px;
+    font-size: 20px;
+    background: #fef575;
+    padding: 10px;
+    /* margin-left: 210px; */
+    margin-top: 20px;
+    position: absolute;
+}
+.btn:hover{
+    background: #ffee00;
+}
